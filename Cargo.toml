@@ -1,0 +1,27 @@
+[package]
+name = "axum_template"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+# Serde / json
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_with = "3"
+uuid7 = "0.6.4"
+# Axum
+axum = "0.6.16"
+tower = "0.4.13"
+tower-http = { version = "0.4.4", features = ["full"] }
+tower-cookies = "0.9"
+# Others
+lazy-regex = "3"
+async-trait = "0.1"
+strum_macros = "0.25"
+uuid = {version = "1", features = ["v4","fast-rng",]}
+
+[dev-dependencies]
+anyhow = "1"
